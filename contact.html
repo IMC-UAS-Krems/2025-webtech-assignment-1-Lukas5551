@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Lukas">
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="ul_style" type="none">
+                    <li><a href="index.html">Welcome</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Form</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="contact-form">
+                <h1 style="margin-bottom: -20px;">Contact Form</h1>
+                <p style="margin-bottom: 1px;">Please fill out this form with the needed information</p>
+                <form action="#" > <!-- asked ChatGPT if I should leave action empty or not if I have no URL where the info goes to, sends it to the same page, which makes the page reload-->
+                    <fieldset> <!-- got the infos from freeCodeCamp-->
+                        <label for="first-name" >Enter your first name: <input id="first-name" name="first-name" type="text" required ></label>
+                        <label for="last-name">Enter your last name: <input id="last-name" name="last-name" type="text" required></label>
+                        <label for="age">Input your age (years): <input id="age" name="age" type="number" min="1" max="120" required/></label>
+                        <label for="email">Enter your Email: <input id="email" name="email" type="email" required></label>
+                        <label for="terms-and-conditions"><input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" class="inline" required> I accept the <a href="images/begging-guy.jpeg" target="_self" style="color: blue;">terms and conditions </a></label>
+                    </fieldset>
+                    <input type="submit" value="Submit" name="submit">
+                </form>
+                <div class="beggar">
+                    <h2 style="font-family: 'Times New Roman', Times, serif;"></h2>
+                    <img src="images/begging-guy.jpeg" alt="a begging guy emoji" width="10%" height="10%">
+                </div>  
+            </section>
+
+        </main>
+        <footer>
+            <p>308 Negra Arroyo Lane</p>
+        </footer>
+    </body>
+</html>
